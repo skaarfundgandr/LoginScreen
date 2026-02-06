@@ -1,13 +1,11 @@
-import { ScreenContent } from 'components/ScreenContent';
-import { StatusBar } from 'expo-status-bar';
-
 import './global.css';
+import { LoginView } from '@/views/LoginView';
+import { View } from 'react-native';
 
 export default function App() {
   return (
-    <>
-      <ScreenContent title="Home" path="App.tsx"></ScreenContent>
-      <StatusBar style="auto" />
-    </>
+    <View className="flex-1 justify-center bg-gray-200">
+      <LoginView />
+    </View>
   );
 }
