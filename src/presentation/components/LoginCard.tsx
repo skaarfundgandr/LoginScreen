@@ -2,16 +2,25 @@ import { View, Text, TextInput, StyleSheet, Button, Alert } from 'react-native';
 import { useState } from 'react';
 
 import '../../../global.css'
+import { login, register } from '@/application/Auth';
 
 export const LoginCard = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  try {
+    register('admin', 'admin');
+  } catch (error) {
+    console.error(error);
+  }
+
   const handleLoginClicked = () => {
-    if (username === "admin" && password === "admin") {
+    if (login(username, password)) {
       Alert.alert("message","Logged in");
+      console.log("logged in");
     } else {
-      Alert.alert("message","Login failed")
+      Alert.alert("message","Login failed");
+      console.log("login failed");
     }
   };
 

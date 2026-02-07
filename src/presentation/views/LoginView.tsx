@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native';
-import { Header } from '@/utils/components/Header';
-import { LoginCard } from '@/utils/components/LoginCard';
+import { Header } from '@/presentation/components/Header';
+import { LoginCard } from '@/presentation/components/LoginCard';
 
 import '../../../global.css';
 
