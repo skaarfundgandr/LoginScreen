@@ -1,8 +1,8 @@
 import { Text, View } from 'react-native';
-import { Header } from '@/components/Header';
-import { LoginCard } from '@/components/LoginCard';
+import { Header } from '@/utils/components/Header';
+import { LoginCard } from '@/utils/components/LoginCard';
 
-import '../../global.css';
+import '../../../global.css';
 
 export const LoginView = () => {
   return (

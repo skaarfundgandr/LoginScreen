@@ -1,5 +1,5 @@
 import './global.css';
-import { LoginView } from '@/views/LoginView';
+import { LoginView } from '@/utils/views/LoginView';
 
 export default function App() {
   return (

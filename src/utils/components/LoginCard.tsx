@@ -1,7 +1,7 @@
 import { View, Text, TextInput, StyleSheet, Button, Alert } from 'react-native';
 import { useState } from 'react';
 
-import '../../global.css'
+import '../../../global.css'
 
 export const LoginCard = () => {
   const [username, setUsername] = useState('');
